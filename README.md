@@ -1,2 +1,2 @@
 # FLUTTER-PROJECTS
- All projects in flutter
+ All flutter projects
