@@ -13,7 +13,9 @@ class _ContadorPageState extends State<ContadorPage> {
   int _contador = 0;
 
   @override
+  //Este build es el metodo para dibujar el widget
   Widget build(BuildContext context) {
+    //El Scaffold es el encargado de utilizar toda la pantalla
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -38,7 +40,7 @@ class _ContadorPageState extends State<ContadorPage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: <Widget>[
-        SizedBox(width: 30),
+        SizedBox(width: 30.0),
         FloatingActionButton(
             child: Icon(Icons.exposure_zero), onPressed: _reset),
         //para agregar espaciado entre los botones:
@@ -56,6 +58,7 @@ class _ContadorPageState extends State<ContadorPage> {
 
   void _agregar() {
     //Esto solo existe dentro de los stateful... recuerda que es para redibujar, es una forma de actulizar nuestras variables... o widgets
+    //Si no haras ningun cambio visual, solo agrega tu logica SIN el setState()
     setState(() => _contador++);
   }
 
