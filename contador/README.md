@@ -1,6 +1,6 @@
 # contador
 
-A new Flutter project.
+Mi primer contador al estilo Flutter :fire:.
 
 ## Getting Started
 
